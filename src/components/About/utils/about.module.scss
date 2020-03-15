@@ -17,4 +17,18 @@
 
 .link__medgrocer {
   color: #0d6d6e !important;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #cfe1e1;
+  }
+}
+
+.header {
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #FFFF9F;
+  }
 }
