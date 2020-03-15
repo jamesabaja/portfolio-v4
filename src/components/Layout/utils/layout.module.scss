@@ -1,0 +1,30 @@
+@import "../../../styles/variables";
+
+.footer__icon {
+  color: #DAA520;
+  font-size: 2.25rem !important;
+  transition: 0.4s;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.footer__content {
+  justify-content: center;
+}
+
+.navbar__right {
+  justify-content: flex-end;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar__link {
+  cursor: pointer;
+}

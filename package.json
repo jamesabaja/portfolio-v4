@@ -11,10 +11,21 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy:production": "yarn -n \"-r dotenv/config\" && GATSBY_AWS_S3_BUCKET_NAME=jamesabaja.com GATSBY_ENV=production yarn build && gatsby-plugin-s3 deploy",
+    "deploy:staging": "yarn -n \"-r dotenv/config\" && GATSBY_ENV=staging yarn build && gatsby-plugin-s3 deploy"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "bulma": "^0.8.0",
+    "classnames": "^2.2.6",
     "gatsby": "^2.19.7",
+    "gatsby-plugin-s3": "^0.3.3",
+    "gatsby-plugin-sass": "^2.1.30",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

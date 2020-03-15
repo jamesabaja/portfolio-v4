@@ -1,0 +1,47 @@
+@import "../../../styles/variables";
+
+.hero__title {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.hero__subtitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: black;
+}
+
+.hero__button--color {
+  border-color: #DAA520;
+  color: #DAA520;
+
+  &:hover {
+    color: white;
+    border-color: #DAA520;
+    background-color: #DAA520;
+  }
+}
+
+.hero__subtitle--blinking-cursor {
+  background: #222;
+  line-height: 100px;
+  margin-left: 3px;
+  -webkit-animation: blink 0.8s infinite;
+  width: 2px;
+  height: 17px;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background: white;
+  }
+
+  50% {
+    background: #222;
+  }
+
+  100% {
+    background: white;
+  }
+}
