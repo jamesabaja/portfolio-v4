@@ -1,6 +1,6 @@
 import React, { useReducer } from "react"
 import { AppReducer } from "./AppReducer"
-// import Modal from "../components/Elements/Modal"
+import Modal from "../components/Elements/Modal"
 
 export const initialState = {
   modal: {
@@ -20,7 +20,7 @@ const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
-      {/* <Modal
+      <Modal
         isModalActive={state.modal.isActive}
         closeModal={() => dispatch({ type: "HIDE_MODAL" })}
         heading={state.modal.heading}
@@ -29,7 +29,7 @@ const AppProvider = ({ children }) => {
         isCard={state.modal.isCard}
       >
         {state.modal.content}
-      </Modal> */}
+      </Modal>
       {children}
     </AppContext.Provider>
   )
