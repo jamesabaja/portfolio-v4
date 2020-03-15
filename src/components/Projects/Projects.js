@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import Container from "../Layout/Container"
 import classNames from "classnames"
 
 import styles from "./utils/projects.module.scss"
-import { Link } from "gatsby"
 
 const Projects = ({ projectsRef }) => (
   <div ref={projectsRef}>
