@@ -7,8 +7,16 @@ import styles from "./utils/about.module.scss"
 const About = ({ aboutRef }) => (
   <div ref={aboutRef}>
     <Container desktop={10} isCentered>
-      <h1 className="is-hidden-mobile mb-3">I build stuff on the internet.</h1>
-      <h3 className="is-hidden-desktop is-hidden-tablet">
+      <h1 className="mb-1">
+        Hi! I'm{" "}
+        <span className={classNames("has-text-gold", styles["header"])}>
+          James.
+        </span>
+      </h1>
+      <h2 className="is-hidden-mobile mt-0 mb-3">
+        I build stuff on the internet.
+      </h2>
+      <h3 className="is-hidden-desktop mt-0 is-hidden-tablet">
         I build stuff on the internet.
       </h3>
       <div className="columns is-vcentered my-1 mx-10 m-0-mobile">
