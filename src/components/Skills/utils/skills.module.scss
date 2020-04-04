@@ -2,8 +2,18 @@
 
 .card {
   border-radius: 10px;
+  height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__header {
   color: #DAA520 !important;
+}
+
+@media screen and (max-width: $tablet) {
+  .card {
+    height: 10rem;
+  }
 }

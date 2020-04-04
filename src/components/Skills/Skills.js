@@ -4,6 +4,26 @@ import classNames from "classnames"
 
 import styles from "./utils/skills.module.scss"
 
+const LANGUAGES = ["HTML", "CSS", "JavaScript", "Python", "Java", "C", "SQL"]
+const FRAMEWORKS = [
+  "React",
+  "Gatsby",
+  "Bulma",
+  "Semantic UI",
+  "Django",
+  "Django Rest Framework",
+]
+const TOOLS = [
+  "PostgreSQL",
+  "Figma",
+  "npm",
+  "yarn",
+  "git",
+  "GitHub",
+  "Heroku",
+  "AWS",
+]
+
 const Skills = ({ skillsRef }) => (
   <div ref={skillsRef}>
     <Container desktop={10} isCentered>
@@ -24,7 +44,7 @@ const Skills = ({ skillsRef }) => (
                 >
                   Languages
                 </p>
-                <ul className="px-1 has-text-centered">
+                {/* <ul className="px-1 has-text-centered">
                   <li>
                     <span>HTML</span>
                   </li>
@@ -34,7 +54,12 @@ const Skills = ({ skillsRef }) => (
                   <li>JavaScript</li>
                   <li>Python</li>
                   <li>Java</li>
-                </ul>
+                </ul> */}
+                <span className="tags is-centered">
+                  {LANGUAGES.map(language => (
+                    <span className="tag">{language}</span>
+                  ))}
+                </span>
               </div>
             </div>
           </div>
@@ -47,15 +72,20 @@ const Skills = ({ skillsRef }) => (
                     styles["card__header"]
                   )}
                 >
-                  Frameworks and Libraries
+                  Frameworks
                 </p>
-                <ul className="px-1 has-text-centered">
+                {/* <ul className="px-1 has-text-centered">
                   <li>React</li>
                   <li>Gatsby</li>
                   <li>Bulma</li>
                   <li>Semantic UI</li>
                   <li>Django + Django Rest Framework</li>
-                </ul>
+                </ul> */}
+                <span className="tags is-centered">
+                  {FRAMEWORKS.map(framework => (
+                    <span className="tag">{framework}</span>
+                  ))}
+                </span>
               </div>
             </div>
           </div>
@@ -68,15 +98,20 @@ const Skills = ({ skillsRef }) => (
                     styles["card__header"]
                   )}
                 >
-                  Methods and Tools
+                  Tools
                 </p>
-                <ul className="px-1 has-text-centered">
+                {/* <ul className="px-1 has-text-centered">
                   <li>Figma</li>
                   <li>NPM + Yarn</li>
                   <li>Git + Github</li>
                   <li>Agile + Scrum</li>
                   <li>Performance Optimization</li>
-                </ul>
+                </ul> */}
+                <span className="tags is-centered">
+                  {TOOLS.map(tool => (
+                    <span className="tag">{tool}</span>
+                  ))}
+                </span>
               </div>
             </div>
           </div>

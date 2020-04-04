@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import classNames from "classnames"
+import styles from "./utils/elements.module.scss"
 
 const Modal = props => {
   const modalBody = props.isCard ? (
@@ -36,7 +37,12 @@ const ModalCardBody = props => (
         </button>
       )}
     </div>
-    <div className="modal-card-body has-text-centered pt-0">
+    <div
+      className={classNames(
+        "modal-card-body has-text-centered pt-0",
+        styles["modal__cardBody"]
+      )}
+    >
       {props.children}
     </div>
   </div>
