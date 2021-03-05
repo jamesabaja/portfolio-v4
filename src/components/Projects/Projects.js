@@ -14,7 +14,7 @@ const Projects = ({ projectsRef }) => {
       <Container desktop={10} isCentered>
         <div className="my-5">
           <h3 className="has-text-right has-text-grey mb-3 mb-1-mobile">
-            These are some of my favorite projects.
+            Here are some of my favorite projects.
           </h3>
           <div className="columns is-multiline">
             {/* <div className="column mb-0-mobile is-4">
@@ -31,6 +31,7 @@ const Projects = ({ projectsRef }) => {
                 dispatch={dispatch}
                 title={project.title}
                 description={project.description}
+                date={project.date}
               />
             ))}
           </div>

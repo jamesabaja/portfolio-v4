@@ -1,10 +1,41 @@
-[{
-  "title": "UPCC",
-  "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at ante nec odio tempor fermentum. Quisque vehicula orci vel nibh iaculis egestas. Pellentesque scelerisque nibh dolor, sit amet ultrices diam facilisis quis. Etiam eget rutrum ipsum. Vivamus nulla leo, facilisis sed dolor eget, posuere ultricies velit.", "Curabitur pharetra libero orci. Ut mollis eros nec molestie lacinia. Cras non est a sem elementum hendrerit. Sed sed dictum orci. Morbi faucibus sapien eu metus efficitur ultricies. Fusce sapien lectus, semper quis lacinia in, pulvinar non lacus. Nulla vitae eros non ipsum accumsan molestie sit amet id dolor. Aenean tincidunt porttitor ligula, id suscipit enim ultrices nec."]
-}, {
-  "title": "SDG Interactions Survey",
-  "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at ante nec odio tempor fermentum. Quisque vehicula orci vel nibh iaculis egestas. Pellentesque scelerisque nibh dolor, sit amet ultrices diam facilisis quis. Etiam eget rutrum ipsum. Vivamus nulla leo, facilisis sed dolor eget, posuere ultricies velit.", "Curabitur pharetra libero orci. Ut mollis eros nec molestie lacinia. Cras non est a sem elementum hendrerit. Sed sed dictum orci. Morbi faucibus sapien eu metus efficitur ultricies. Fusce sapien lectus, semper quis lacinia in, pulvinar non lacus. Nulla vitae eros non ipsum accumsan molestie sit amet id dolor. Aenean tincidunt porttitor ligula, id suscipit enim ultrices nec."]
-}, {
-  "title": "SOCKnet",
-  "description": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi at ante nec odio tempor fermentum. Quisque vehicula orci vel nibh iaculis egestas. Pellentesque scelerisque nibh dolor, sit amet ultrices diam facilisis quis. Etiam eget rutrum ipsum. Vivamus nulla leo, facilisis sed dolor eget, posuere ultricies velit.", "Curabitur pharetra libero orci. Ut mollis eros nec molestie lacinia. Cras non est a sem elementum hendrerit. Sed sed dictum orci. Morbi faucibus sapien eu metus efficitur ultricies. Fusce sapien lectus, semper quis lacinia in, pulvinar non lacus. Nulla vitae eros non ipsum accumsan molestie sit amet id dolor. Aenean tincidunt porttitor ligula, id suscipit enim ultrices nec."]
-}]
+[
+  {
+    "title": "UPCC",
+    "date": "Aug 2017 - May 2018",
+    "description": [
+      "UP Curriculum Checker (UPCC) is an android application that help BS Computer Science students track prescribed subjects each semester based on the subjects they've already taken.",
+      "Combining UI/UX research and various user stories, the system aids to make a CS student's journey more seamless and efficient."
+    ]
+  },
+  {
+    "title": "SDG Interactions Survey",
+    "date": "Sep 2018 - May 2019",
+    "description": [
+      "The SDG Interactions Survey is a React-based web application on top of Flask to provide a paperless solution for our undergraduate thesis (An Analysis on the Sustainable Development Goals and their Interactions, 2019). In partnership with the National College of Public Administration and Governance (NCPAG) and College of Social Work and Community Development (CSWCD) of the University of the Philippines, the website aids in data gathering and visualization of insights regarding the interactions of the 17 SDGs with each other, obtained from professionals in the practice or study of sustainability and development issues.",
+      "The study mainly aims to see whether the set SDGs for the UN are truly achievable by the year 2030, and it was accepted for presentation at the 16th Annual Meeting of the Asia Oceania GeoSciences Society (AOGS) in Suntec Convention Centre, Singapore, along with other undergraduate and post-graduate students hailing from various parts of Asia."
+    ]
+  },
+  {
+    "title": "SOCKnet",
+    "date": "Apr 2018 - May 2018",
+    "description": [
+      "SOCKnet is an internet-of-things (IoT) project to help users control their sockets at home even when they're not at home by switching them on or off, made possible by an android application, REST APIs built on Ruby on Rails, electronic components, and computer networking concepts.",
+      "Aside from socket management, the application also sends a notification to the user of devices still plugged in for a more efficient and proactive way of managing your electronics and appliances."
+    ]
+  },
+  {
+    "title": "Inside the Club",
+    "date": "Sep 2018 - Feb 2021",
+    "description": [
+      "Inside the Club is UP Industrial Engineering Club's internal website. The system helps in managing the organization's databases and processes and streamlining them into one integrated platform. Built using React on top of Django as a REST API.",
+      "The platform supports event attendance tracking, information management for reafilliation and role applications, evaluation forms, and integrated reports and analytics."
+    ]
+  },
+  {
+    "title": "MEDikts",
+    "date": "May 2019 - Jun 2019",
+    "description": [
+      "The Medicine Inventory Keeping and Tracking System (MEDikts) is a web application that qualified as a top 10 finalist for Accenture's Program the Future 2019. This application aims to streamline and optimize processes in ensuring medicine availability in health centers given by city health offices by providing a platform to connect the said two entities. Built using React on top of Django as a REST API."
+    ]
+  }
+]

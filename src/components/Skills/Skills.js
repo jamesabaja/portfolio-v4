@@ -22,6 +22,7 @@ const TOOLS = [
   "GitHub",
   "Heroku",
   "AWS",
+  "Firebase",
 ]
 
 const Skills = ({ skillsRef }) => (

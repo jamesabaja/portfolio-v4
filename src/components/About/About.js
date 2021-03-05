@@ -19,28 +19,14 @@ const About = ({ aboutRef }) => (
       <h3 className="is-hidden-desktop mt-0 is-hidden-tablet">
         I build stuff on the internet.
       </h3>
-      <div className="columns is-vcentered my-1 mx-10 m-0-mobile">
+      <div className="columns is-vcentered my-1 mx-8 m-0-mobile">
         <div
           className={classNames(
-            "column is-flex has-text-centered mr-3 mr-0-mobile",
+            "column is-flex has-text-centered mr-5 mr-0-mobile",
             styles["emoji"]
           )}
         >
           <span role="img" aria-label="emoji">
-            👨‍💻
-          </span>
-          <span
-            className="is-hidden-tablet is-hidden-desktop ml-3"
-            role="img"
-            aria-label="emoji"
-          >
-            👨‍💻
-          </span>
-          <span
-            className="is-hidden-tablet is-hidden-desktop ml-3"
-            role="img"
-            aria-label="emoji"
-          >
             👨‍💻
           </span>
         </div>
@@ -51,28 +37,14 @@ const About = ({ aboutRef }) => (
           through each line of code I write.
         </div>
       </div>
-      <div className="columns is-vcentered my-1 mx-10 m-0-mobile">
+      <div className="columns is-vcentered my-1 mx-8 m-0-mobile">
         <div
           className={classNames(
-            "column is-flex has-text-centered mr-3 mr-0-mobile",
+            "column is-flex has-text-centered mr-5 mr-0-mobile",
             styles["emoji"]
           )}
         >
           <span role="img" aria-label="emoji">
-            💊
-          </span>
-          <span
-            className="is-hidden-tablet is-hidden-desktop ml-3"
-            role="img"
-            aria-label="emoji"
-          >
-            💊
-          </span>
-          <span
-            className="is-hidden-tablet is-hidden-desktop ml-3"
-            role="img"
-            aria-label="emoji"
-          >
             💊
           </span>
         </div>
@@ -96,28 +68,14 @@ const About = ({ aboutRef }) => (
           more accessible and cost-effective.
         </div>
       </div>
-      <div className="columns is-vcentered my-1 mx-10 m-0-mobile">
+      <div className="columns is-vcentered my-1 mx-8 m-0-mobile">
         <div
           className={classNames(
-            "column is-flex has-text-centered mr-3 mr-0-mobile",
+            "column is-flex has-text-centered mr-5 mr-0-mobile",
             styles["emoji"]
           )}
         >
           <span role="img" aria-label="emoji">
-            📊
-          </span>
-          <span
-            className="is-hidden-tablet is-hidden-desktop ml-3"
-            role="img"
-            aria-label="emoji"
-          >
-            📊
-          </span>
-          <span
-            className="is-hidden-tablet is-hidden-desktop ml-3"
-            role="img"
-            aria-label="emoji"
-          >
             📊
           </span>
         </div>

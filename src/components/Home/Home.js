@@ -62,7 +62,7 @@ const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
               <div className="buttons is-centered">
                 <button
                   className={classNames(
-                    "button is-outlined",
+                    "button is-medium is-outlined",
                     styles["hero__buttonColor"]
                   )}
                   onClick={() => scrollToRef(aboutRef)}
@@ -71,7 +71,7 @@ const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
                 </button>
                 <button
                   className={classNames(
-                    "button is-outlined",
+                    "button is-medium is-outlined",
                     styles["hero__buttonColor"]
                   )}
                   onClick={() => scrollToRef(skillsRef)}
@@ -80,7 +80,7 @@ const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
                 </button>
                 <button
                   className={classNames(
-                    "button is-outlined",
+                    "button is-medium is-outlined",
                     styles["hero__buttonColor"]
                   )}
                   onClick={() => scrollToRef(projectsRef)}
