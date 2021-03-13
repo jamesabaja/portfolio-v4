@@ -4,6 +4,12 @@
 @import "bulma";
 @import "./typography.scss";
 
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../static/fonts/AvenirNext/AvenirNextLTPro-Regular.otf")
+    format("opentype");
+}
+
 html {
   scroll-behavior: smooth;
 }
