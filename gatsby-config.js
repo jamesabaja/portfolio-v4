@@ -11,15 +11,5 @@ module.exports = {
     description: `James' Portfolio Website (v4.0).`,
     author: `James Abaja <jamesabaja.dev@gmail.com>`,
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-s3`,
-      options: {
-        bucketName: process.env.GATSBY_AWS_S3_BUCKET_NAME,
-        region: process.env.GATSBY_AWS_S3_REGION,
-      },
-    },
-  ],
+  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`],
 }
