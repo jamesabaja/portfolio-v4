@@ -14,12 +14,6 @@ const Navbar = ({ scrollToRef, homeRef }) => {
         >
           James Abaja
         </span>
-        {/* <div className={classNames("ml-1 mr-1 is-size-6")}>
-          For inquiries, visit our{" "}
-          <Link to="/help-center">
-            <span className="has-text-weight-bold">help center</span>
-          </Link>
-        </div> */}
       </div>
     </nav>
   )

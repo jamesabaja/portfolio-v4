@@ -11,7 +11,7 @@ const Modal = props => {
 
   return (
     <div
-      className={classNames("modal m-0", {
+      className={classNames("modal m-0 px-1-mobile", {
         "is-active": props.isModalActive,
       })}
     >

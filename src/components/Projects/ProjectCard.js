@@ -3,8 +3,15 @@ import classNames from "classnames"
 
 import styles from "./utils/projects.module.scss"
 
-const ProjectCard = ({ dispatch, title, description, date }) => {
-  const handleClick = event => {
+const ProjectCard = ({
+  dispatch,
+  title,
+  description,
+  date,
+  screenshot,
+  ...rest
+}) => {
+  const handleClick = () => {
     dispatch({
       type: "SHOW_MODAL",
       payload: {
@@ -12,8 +19,13 @@ const ProjectCard = ({ dispatch, title, description, date }) => {
         headerClass: styles["card__modalHeader"],
         content: (
           <div>
-            <h3 className="has-text-gold mt-0 has-text-left mb-0">{title}</h3>
+            <h3 className="has-text-gold mt-0 has-text-left mb-0">
+              {title} {rest?.isNew ? <span className="tag">New</span> : null}
+            </h3>
             <p className="is-size-6 has-text-left mt-0 mb-2">{date}</p>
+            {!!screenshot ? (
+              <img src={screenshot} alt="project_screenshot" className="mb-3" />
+            ) : null}
             {description.map(item => (
               <p className="has-text-justified mb-1">{item}</p>
             ))}
@@ -36,7 +48,8 @@ const ProjectCard = ({ dispatch, title, description, date }) => {
       >
         <div className="card-content">
           <p className="has-text-centered is-size-5 has-text-weight-bold">
-            {title}
+            <span>{title}</span>{" "}
+            {rest?.isNew ? <span className="tag">New</span> : null}
           </p>
         </div>
       </div>

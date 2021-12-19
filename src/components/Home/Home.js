@@ -46,7 +46,8 @@ const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
           <div className="hero-body pt-0 has-text-centered">
             <div className="container mt-0">
               <h1 className={classNames(styles["hero__title"], "mt-0")}>
-                James <span className="is-hidden-mobile">Abaja</span>
+                {/* James <span className="is-hidden-mobile">Abaja</span> */}
+                Hi, I'm James.
               </h1>
               <h2
                 className={classNames(
