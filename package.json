@@ -12,10 +12,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy:production": "yarn -n \"-r dotenv/config\" && GATSBY_AWS_S3_BUCKET_NAME=jamesabaja.com GATSBY_ENV=production yarn build && gatsby-plugin-s3 deploy",
-    "deploy:staging": "yarn -n \"-r dotenv/config\" && GATSBY_ENV=staging yarn build && gatsby-plugin-s3 deploy",
-    "deploy:production-dottech": "yarn -n \"-r dotenv/config\" && GATSBY_AWS_S3_BUCKET_NAME=jamesabaja.tech GATSBY_ENV=production yarn build && gatsby-plugin-s3 deploy",
-    "deploy:staging-dottech": "yarn -n \"-r dotenv/config\" && GATSBY_AWS_S3_BUCKET_NAME=beta.jamesabaja.tech GATSBY_ENV=staging yarn build && gatsby-plugin-s3 deploy"
+    "deploy:production": "yarn -n \"-r dotenv/config\" && GATSBY_AWS_S3_BUCKET_NAME=jamesabaja.com GATSBY_ENV=production yarn build && firebase use production && firebase deploy --only hosting:jamesabaja-815ef && firebase use default",
+    "deploy:staging": "yarn -n \"-r dotenv/config\" && GATSBY_ENV=staging yarn build && gatsby-plugin-s3 deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

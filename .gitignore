@@ -67,3 +67,8 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+**/.firebaserc
+.firebase/
+.runtimeconfig.json
+.idea
