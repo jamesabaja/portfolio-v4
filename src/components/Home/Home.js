@@ -13,7 +13,7 @@ const subtitleChoices = [
   "Project Manager",
 ]
 
-const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
+const Home = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }) => {
   const [subtitleText, setSubtitleText] = useState(subtitleChoices[0][0])
   const [subtitleIndex, setSubtitleIndex] = useState(0)
 
@@ -47,6 +47,9 @@ const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
             <div className="container mt-0">
               <h1 className={classNames(styles["hero__title"], "mt-0")}>
                 {/* James <span className="is-hidden-mobile">Abaja</span> */}
+                <span role="img" aria-label="emoji">
+                  👋
+                </span>{" "}
                 Hi, I'm James.
               </h1>
               <h2
@@ -68,42 +71,28 @@ const Home = ({ homeRef, aboutRef, skillsRef, projectsRef, scrollToRef }) => {
                   )}
                   onClick={() => scrollToRef(aboutRef)}
                 >
-                  About
+                  Who are you?
                 </button>
+              </div>
+              <div className="buttons is-centered">
                 <button
                   className={classNames(
-                    "button is-medium is-outlined",
-                    styles["hero__buttonColor"]
-                  )}
-                  onClick={() => scrollToRef(skillsRef)}
-                >
-                  Skills
-                </button>
-                <button
-                  className={classNames(
-                    "button is-medium is-outlined",
+                    "button is-text is-outlined",
                     styles["hero__buttonColor"]
                   )}
                   onClick={() => scrollToRef(projectsRef)}
                 >
-                  Work
+                  What have you been working on?
                 </button>
-                {/* <button
-                className={classNames(
-                  "button is-outlined",
-                  styles["hero__buttonColor"]
-                )}
-              >
-                CV
-              </button>
-              <button
-                className={classNames(
-                  "button is-outlined",
-                  styles["hero__buttonColor"]
-                )}
-              >
-                Contact
-              </button> */}
+                <button
+                  className={classNames(
+                    "button is-text is-outlined",
+                    styles["hero__buttonColor"]
+                  )}
+                  onClick={() => scrollToRef(contactRef)}
+                >
+                  I want to reach out.
+                </button>
               </div>
             </div>
           </div>

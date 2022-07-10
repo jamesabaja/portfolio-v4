@@ -28,15 +28,6 @@ const Projects = ({ projectsRef }) => {
             Here are some of my favorite projects.
           </h3>
           <div className="columns is-multiline">
-            {/* <div className="column mb-0-mobile is-4">
-            <div className={classNames("card", styles["card"])}>
-            <div className="card-content">
-            <p className="has-text-centered is-size-5 has-text-weight-bold">
-            Store Admin
-            </p>
-            </div>
-            </div>
-          </div> */}
             {projects.map(project => (
               <ProjectCard
                 {...project}
@@ -48,9 +39,6 @@ const Projects = ({ projectsRef }) => {
               />
             ))}
           </div>
-          {/* <p className="has-text-right mt-0">
-          <Link>See more of my work here ></Link>
-        </p> */}
         </div>
       </Container>
     </div>

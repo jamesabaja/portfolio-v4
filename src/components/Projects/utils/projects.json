@@ -1,5 +1,21 @@
 [
   {
+    "title": "Budgetarian",
+    "isNew": true,
+    "isFeatured": true,
+    "date": "July 2022 - Present",
+    "description": [
+      "A Software-as-a-Service (SaaS) platform aiming to give people a more seamless and integrated experience in managing their finances.",
+      "It is the perfect companion to manage one's personal finances. Unlike other expense tracking apps, Budgetarian is driven by the daily practice of life.",
+      "Coming soon this 2023, it aims to connect people's goals, interests, and aspirations to help them make better financial decisions. Users can sign up as early as now to get notified for updates, early access content, and the long-awaited product launch."
+    ],
+    "cta": {
+      "content": "Sign me up! 🙋🏻‍♂️",
+      "link": "https://budgetarian.co"
+    },
+    "screenshot": "budgetarian"
+  },
+  {
     "title": "UPCC",
     "date": "Aug 2017 - May 2018",
     "description": [
@@ -40,15 +56,5 @@
       "The Medicine Inventory Keeping and Tracking System (MEDikts) is a web application that qualified as a top 10 finalist for Accenture's Program the Future 2019. This application aims to streamline and optimize processes in ensuring medicine availability in health centers given by city health offices by providing a platform to connect the said two entities. Built using React on top of Django as a REST API."
     ],
     "screenshot": "medikts"
-  },
-  {
-    "title": "Budgetarian",
-    "isNew": true,
-    "date": "July 2021 - Present",
-    "description": [
-      "A Software-as-a-Service (SaaS) platform aiming to give people a more seamless and integrated experience in managing their finances.",
-      "It is the perfect companion to manage one's personal finances. Unlike other expense tracking apps, Budgetarian is driven by the daily practice of life. It aims to connect people's goals, interests, and aspirations to help them make better financial decisions."
-    ],
-    "screenshot": "budgetarian"
   }
 ]
