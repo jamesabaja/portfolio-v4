@@ -7,7 +7,18 @@ const getPeoplePages = () => [
       seoTitle: "Hi, James!",
       password: "FortunaMajor!",
       name: "James",
-      content: `<div class="is-size-6">Never change.</div>`,
+      content: `<div class="is-size-5">Never change.</div>`,
+    },
+  },
+  {
+    module: "eddy",
+    path: `eddy`,
+    componentPath: `./src/components/People/CustomPeople/Eddy.js`,
+    context: {
+      seoTitle: "-",
+      password: "wildflour",
+      name: "Eddy",
+      content: ``,
     },
   },
 ]
