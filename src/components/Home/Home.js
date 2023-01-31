@@ -58,7 +58,7 @@ const Home = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }) => {
                   styles["hero__subtitle"]
                 )}
               >
-                {subtitleText}
+                <span>{subtitleText}</span>
                 <div
                   className={classNames(styles["hero__subtitleBlinkingCursor"])}
                 />
@@ -71,7 +71,7 @@ const Home = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }) => {
                   )}
                   onClick={() => scrollToRef(aboutRef)}
                 >
-                  Who are you?
+                  About Me
                 </button>
               </div>
               <div className="buttons is-centered">
@@ -82,7 +82,10 @@ const Home = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }) => {
                   )}
                   onClick={() => scrollToRef(projectsRef)}
                 >
-                  What have you been working on?
+                  <span>Some projects I've been working on</span>&nbsp;
+                  <span role="img" aria-label="emoji">
+                    👀
+                  </span>
                 </button>
                 <button
                   className={classNames(
@@ -91,7 +94,7 @@ const Home = ({ homeRef, aboutRef, projectsRef, contactRef, scrollToRef }) => {
                   )}
                   onClick={() => scrollToRef(contactRef)}
                 >
-                  I want to reach out.
+                  Wanna reach out?
                 </button>
               </div>
             </div>

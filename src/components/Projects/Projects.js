@@ -9,6 +9,7 @@ import insideTheClub from "../../../static/images/inside-the-club.png"
 import medikts from "../../../static/images/medikts.png"
 import sdgInteractions from "../../../static/images/sdg-interactions.png"
 import budgetarian from "../../../static/images/budgetarian.png"
+import rekord from "../../../static/images/rekord.png"
 
 const Projects = ({ projectsRef }) => {
   const { dispatch } = useContext(AppContext)
@@ -18,6 +19,7 @@ const Projects = ({ projectsRef }) => {
     medikts,
     sdgInteractions,
     budgetarian,
+    rekord,
   }
 
   return (
@@ -28,7 +30,7 @@ const Projects = ({ projectsRef }) => {
             Here are some of my favorite projects.
           </h3>
           <div className="columns is-multiline">
-            {projects.map(project => (
+            {projects.slice(0, 6).map(project => (
               <ProjectCard
                 {...project}
                 dispatch={dispatch}

@@ -1,9 +1,24 @@
 [
   {
+    "title": "Rekord",
+    "isNew": true,
+    "isFeatured": true,
+    "date": "Sep 2022 - Present",
+    "description": [
+      "Rekord is an online record and merchandise shop built by a small team of music enthusiasts and merch collectors who started this small passion project as our creative outlet where we hope we can better bridge the gap between music fans like us and our favorite artists’ art.",
+      "In line with our soft launch, we're opening up pre-orders for Taylor Swift’s tenth-studio album, Midnights for only Php 1,099.00."
+    ],
+    "cta": {
+      "content": "Pre-order now",
+      "link": "https://rekord.ph"
+    },
+    "screenshot": "rekord"
+  },
+  {
     "title": "Budgetarian",
     "isNew": true,
     "isFeatured": true,
-    "date": "July 2022 - Present",
+    "date": "Jul 2022 - Present",
     "description": [
       "A Software-as-a-Service (SaaS) platform aiming to give people a more seamless and integrated experience in managing their finances.",
       "It is the perfect companion to manage one's personal finances. Unlike other expense tracking apps, Budgetarian is driven by the daily practice of life.",

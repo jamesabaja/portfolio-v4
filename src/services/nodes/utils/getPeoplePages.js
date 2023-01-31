@@ -10,17 +10,17 @@ const getPeoplePages = () => [
       content: `<div class="is-size-5">Never change.</div>`,
     },
   },
-  {
-    module: "eddy",
-    path: `eddy`,
-    componentPath: `./src/components/People/CustomPeople/Eddy.js`,
-    context: {
-      seoTitle: "-",
-      password: "wildflour",
-      name: "Eddy",
-      content: ``,
-    },
-  },
+  // {
+  //   module: "eddy",
+  //   path: `eddy`,
+  //   componentPath: `./src/components/People/CustomPeople/Eddy.js`,
+  //   context: {
+  //     seoTitle: "-",
+  //     password: "wildflour",
+  //     name: "Eddy",
+  //     content: ``,
+  //   },
+  // },
 ]
 
 module.exports = { getPeoplePages }

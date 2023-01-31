@@ -54,8 +54,8 @@ const About = ({ aboutRef }) => {
           </div>
           <div className="column pt-0-mobile has-text-justified">
             Currently, I am an{" "}
-            <span className="has-text-weight-bold">Associate IT Manager</span>{" "}
-            and <span className="has-text-weight-bold">Developer</span> for{" "}
+            <span className="has-text-weight-bold">IT Manager</span> and{" "}
+            <span className="has-text-weight-bold">Developer</span> for{" "}
             <a
               href="https://medgrocer.com"
               className={classNames(

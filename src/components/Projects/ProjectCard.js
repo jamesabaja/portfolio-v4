@@ -18,53 +18,61 @@ const ProjectCard = ({
         isCard: true,
         headerClass: styles["card__modalHeader"],
         content: (
-          <div>
-            <h3 className="has-text-gold mt-0 has-text-left mb-0">
-              {title}{" "}
-              {rest?.isNew ? (
-                <span className="tag">
-                  New{" "}
-                  <span
-                    className={classNames(styles["card__tagEmoji"])}
-                    role="img"
-                    aria-label="emoji"
-                  >
-                    ✨
-                  </span>
-                </span>
-              ) : null}{" "}
-              {rest?.isFeatured ? (
-                <span className="tag">
-                  Featured{" "}
-                  <span
-                    className={classNames(styles["card__tagEmoji"])}
-                    role="img"
-                    aria-label="emoji"
-                  >
-                    💯
-                  </span>
-                </span>
-              ) : null}
-            </h3>
-            <p className="is-size-6 has-text-left mt-0 mb-2">{date}</p>
+          <div className="is-flex">
             {!!screenshot ? (
-              <img src={screenshot} alt="project_screenshot" className="mb-3" />
-            ) : null}
-            {description.map(item => (
-              <p className="has-text-justified mb-1">{item}</p>
-            ))}
-            {rest?.cta ? (
-              <div className="buttons is-right">
-                <a
-                  href={rest?.cta?.link}
-                  rel="noreferrer noopener"
-                  target="_blank"
-                  className="button is-primary has-text-weight-bold"
-                >
-                  <p className="is-size-6">{rest?.cta?.content}</p>{" "}
-                </a>
+              <div className="mr-1 is-hidden-mobile">
+                <img src={screenshot} alt="project_screenshot" />
               </div>
             ) : null}
+            <div className="is-flex is-flex-direction-column is-justify-content-space-between">
+              <div>
+                <h3 className="has-text-gold mt-0 has-text-left mb-0">
+                  {title}{" "}
+                  {rest?.isNew ? (
+                    <span className="tag">
+                      New{" "}
+                      <span
+                        className={classNames(styles["card__tagEmoji"])}
+                        role="img"
+                        aria-label="emoji"
+                      >
+                        ✨
+                      </span>
+                    </span>
+                  ) : null}{" "}
+                  {rest?.isFeatured ? (
+                    <span className="tag">
+                      Featured{" "}
+                      <span
+                        className={classNames(styles["card__tagEmoji"])}
+                        role="img"
+                        aria-label="emoji"
+                      >
+                        💯
+                      </span>
+                    </span>
+                  ) : null}
+                </h3>
+                <p className="is-size-6 has-text-left mt-0 mb-2">{date}</p>
+                {description.map(item => (
+                  <p className="has-text-justified mb-1">{item}</p>
+                ))}
+              </div>
+              <div>
+                {rest?.cta ? (
+                  <div className="buttons is-right mt-2">
+                    <a
+                      href={rest?.cta?.link}
+                      rel="noreferrer noopener"
+                      target="_blank"
+                      className="button is-primary has-text-weight-bold"
+                    >
+                      <p className="is-size-6">{rest?.cta?.content}</p>{" "}
+                    </a>
+                  </div>
+                ) : null}
+              </div>
+            </div>
           </div>
         ),
       },

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Fragment } from "react"
 import classNames from "classnames"
 import styles from "./utils/elements.module.scss"
@@ -15,14 +16,14 @@ const Modal = props => {
         "is-active": props.isModalActive,
       })}
     >
-      <div className="modal-background"></div>
+      <div className="modal-background" onClick={props.closeModal}></div>
       {modalBody}
     </div>
   )
 }
 
 const ModalCardBody = props => (
-  <div className="modal-card p-0">
+  <div className={classNames("modal-card p-0", styles["modal__card"])}>
     <div
       className={classNames("modal-card-head pb-0", props.modalHeaderClass, {
         "has-background-white": !props.modalHeaderClass,
