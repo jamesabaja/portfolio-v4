@@ -6,6 +6,7 @@ import Projects from "../components/Projects/Projects"
 import Skills from "../components/Skills/Skills"
 import Contact from "../components/Contact"
 import ComingSoon from "../components/ComingSoon"
+import Experience from "../components/Experience/Experience"
 
 export default () => {
   const aboutRef = useRef(null)
@@ -31,6 +32,7 @@ export default () => {
       <About aboutRef={aboutRef} />
       <Skills skillsRef={skillsRef} />
       <Projects projectsRef={projectsRef} />
+      <Experience />
       <Contact contactRef={contactRef} />
       <ComingSoon scrollToRef={scrollToRef} homeRef={homeRef} />
     </Layout>

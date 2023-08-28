@@ -1,0 +1,35 @@
+[
+  {
+    "label": "University of the Philippines Diliman",
+    "location": "Quezon City, Philippines",
+    "logo": "upd",
+    "duration": "Aug 2015 - Jun 2019",
+    "type": "Education",
+    "degreeProgram": "BS Computer Science",
+    "laboratory": "System Modeling and Simulation"
+  },
+  {
+    "label": "MedGrocer",
+    "location": "Quezon City, Philippines",
+    "logo": "medgrocer",
+    "duration": "Jun 2018 - Jul 2018",
+    "type": "Work",
+    "title": "IT Intern"
+  },
+  {
+    "label": "MedGrocer",
+    "location": "Quezon City, Philippines",
+    "logo": "medgrocer",
+    "duration": "May 2019 - Aug 2022",
+    "type": "Work",
+    "title": "Associate IT Manager"
+  },
+  {
+    "label": "MedGrocer",
+    "location": "Quezon City, Philippines",
+    "logo": "medgrocer",
+    "duration": "Aug 2022 - Present",
+    "type": "Work",
+    "title": "Senior IT Manager"
+  }
+]
